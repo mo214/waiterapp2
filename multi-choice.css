@@ -1,0 +1,53 @@
+/* Style for the multiple choice options */
+.food-content form {
+    margin-top: 20px;
+}
+
+.food-content input[type="radio"] {
+    display: none;
+}
+
+.food-content label {
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.food-content label:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ccc;
+    border-radius: 2px;
+    background-color: #fff;
+}
+
+.food-content input[type="radio"]:checked + label:before {
+    background-color: #4CAF50;
+    border-color: #4CAF50;
+}
+
+.food-content label:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0;
+}
+
+.food-content input[type="radio"]:checked + label:after {
+    opacity: 1;
+}

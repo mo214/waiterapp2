@@ -1,0 +1,46 @@
+/* styles.css */
+
+/* Example CSS styles for navigation bar */
+.navigation {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Example CSS styles for shopping cart */
+.cd-cart {
+    position: relative;
+}
+
+.cd-cart__trigger {
+    color: #fff;
+    cursor: pointer;
+}
+
+.cd-cart__count {
+    display: inline-block;
+    background-color: #ff0000;
+    color: #fff;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    margin-left: -10px;
+    margin-top: -10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 12px;
+}
+
+.cd-cart--empty .cd-cart__count {
+    display: none;
+}

@@ -1,0 +1,31 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Page</title>
+    <link rel="stylesheet" href="logo.css">
+    <script>
+        // JavaScript function to navigate to the image grid page
+        function menu() {
+            setTimeout(() => {
+                window.location.href = 'Menu.html'; 
+            }, 3000); // Adjust the delay (in milliseconds) as needed
+        }
+    </script>
+    
+</head>
+<body onload="menu()"> <!-- Call the JavaScript function when the page loads -->
+    <div id="welcome" class="welcome-text">
+        <img src="logo.png" alt="Logo" class="logo">
+        <h1>OrderApp</h1>
+    </div>
+
+    <script src="welcome.js"></script>
+    <script src="service-worker.js"></script>
+
+</body>
+</html>
+

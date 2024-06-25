@@ -1,0 +1,210 @@
+/* CSS for image grid */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.image-item {
+    width: 100%;
+    cursor: pointer;
+    border: 1px solid #ccc; /* Border style */
+    border-radius: 4%;
+}
+
+.image-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 4%;
+}
+/* CSS styles for the "Drikkevarer" heading */
+.drinks {
+    font-family: 'Arial', sans-serif; /* Change the font to something more light */
+    font-size: 24px; /* Adjust the font size as needed */
+    color: #333; /* Set the text color */
+    text-align: center; /* Center the text */
+    margin-top: 20px; /* Add some top margin for spacing */
+    position: relative; /* Set the position to relative */
+}
+
+/* Style for the line above the text */
+.drinks::before {
+    content: ''; /* Add content for pseudo-element */
+    position: absolute; /* Set the position to absolute */
+    width: 100%; /* Set the width to 100% of the container */
+    height: 1px; /* Set the height of the line */
+    background-color: #8fd19e; /* Set the color of the line */
+    top: calc(117% - 1px); /* Position the line at the top of the text */
+    left: 0; /* Position the line at the left edge */
+}
+
+/* Style for the line below the text */
+.drinks::after {
+    content: ''; /* Add content for pseudo-element */
+    position: absolute; /* Set the position to absolute */
+    width: 100%; /* Set the width to 100% of the container */
+    height: 1px; /* Set the height of the line */
+    background-color: #8fd19e; /* Set the color of the line */
+    bottom: calc(119% - 1px); /* Position the line at the bottom of the text */
+    left: 0; /* Position the line at the left edge */
+}
+
+.top-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 51px;
+    margin-top: 72px;
+}
+
+.top-buttons button {
+    padding: 10px 20px;
+    font-size: 14px;
+    background-color: #128996;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.top-buttons button:hover {
+    background-color: #128996;
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    margin-bottom: 20px; /* Add margin to separate the buttons from the content below */
+}
+
+.burgerlogo {
+    width: 100px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 10px; /* Add some space between the logo and buttons */
+}
+.price-container {
+   
+    padding: 10px; /* Add some padding */
+    text-align: center; /* Center align text */
+    font-size:35px;
+    font-family: "Nova Flat", system-ui;
+    font-weight: 300;
+}
+
+.item-name {
+    
+    padding: 10px; /* Add some padding */
+    text-align: center; /* Center align text */
+    font-family: "Nova Flat", system-ui;
+    font-size:20px;
+    font-weight: 300;
+}
+
+/* CSS styles for the "Burger" heading */
+.burgersheader {
+    font-family: 'Arial', sans-serif; /* Change the font to something more light */
+    font-size: 24px; /* Adjust the font size as needed */
+    color: #333; /* Set the text color */
+    text-align: center; /* Center the text */
+    margin-top: 20px; /* Add some top margin for spacing */
+    position: relative; /* Set the position to relative */
+}
+
+/* Style for the line above the text */
+.burgersheader:before {
+    content: ''; /* Add content for pseudo-element */
+    position: absolute; /* Set the position to absolute */
+    width: 100%; /* Set the width to 100% of the container */
+    height: 1px; /* Set the height of the line */
+    background-color: #8fd19e; /* Set the color of the line */
+    top: calc(117% - 1px); /* Position the line at the top of the text */
+    left: 0; /* Position the line at the left edge */
+}
+
+/* Style for the line below the text */
+.burgersheader:after {
+    content: ''; /* Add content for pseudo-element */
+    position: absolute; /* Set the position to absolute */
+    width: 100%; /* Set the width to 100% of the container */
+    height: 1px; /* Set the height of the line */
+    background-color: #8fd19e; /* Set the color of the line */
+    bottom: calc(119% - 1px); /* Position the line at the bottom of the text */
+    left: 0; /* Position the line at the left edge */
+}
+
+.tilføj-button {
+    padding: 10px 20px;
+    font-size: 14px;
+    background-color: #128996;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.bottom-navigation {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #028962;
+    color: #000000;
+    text-align: center;
+    padding: 10px 0;
+}
+#price {
+margin-right: 50px;
+}
+
+/* Style the text inside the navigation bar */
+.bottom-navigation p {
+    margin: 0;
+    font-size: 37px;
+    text-align: right;
+}
+.cart-info {
+    display: flex;
+    align-items: center;
+}
+
+/* Style for the light blue circle */
+.outer-circle {
+    background-color: lightblue; /* Light blue background color */
+    border-radius: 50%;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Align items evenly */
+    border-radius: 22px;
+}
+
+/* Style for the white circle around the quantity number */
+.white-circle {
+    background-color: white; /* White background color */
+    border-radius: 50%;
+    padding: 4px; /* Adjust padding as needed */
+    margin-left: 12px;
+}
+
+/* Shopping bag logo styles */
+.shopping-bag {
+    background-image: url('shopping-bag.png'); /* Replace 'shopping-bag.png' with your image path */
+    width: 20px; /* Adjust size as needed */
+    height: 20px; /* Adjust size as needed */
+    background-size: cover;
+    margin-left: 33px; /* Adjust margin as needed */
+}
+
+.price-circle {  /
+    background-color: white; /* White background color */
+    border-radius: 22px;
+    padding: 10px; /* Adjust padding as needed */
+    margin-left: 12px; 
+    background-color: lightblue; /* Light blue background color */
+    margin-right: 31px;
+
+
+
+}

@@ -1,0 +1,22 @@
+.bottom-navigation {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #006f9f;
+    padding: 10px 20px;
+    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cart-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.quantity {
+    margin-right: auto; /* Pushes the price to the right */
+}
+
+.price {
+    margin-left: auto; /* Pushes the quantity to the left */
+}

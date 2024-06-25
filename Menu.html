@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Grid</title>
+    <link rel="stylesheet" href="Menu.css">
+    <link rel="stylesheet" href="sidemenu.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+
+    <link rel="stylesheet" href="navigatiobar.css">
+    <script src="Menu.js"></script>
+    <script src="sidemenu.js"></script>
+   
+</head>
+<body>
+    <div class="logo-container">
+    <img src="burgerlogo.png" alt="Logo" class="burgerlogo">
+    </div>
+ <!-- Small buttons -->
+ <div class="top-buttons">
+    <button onclick="scrollToFood()">Burger</button>
+    <button onclick="scrollToDrinks()">Drinks</button>
+    <button onclick="scrollTodessert()">Dessert</button>
+</div>
+<!-- Hamburger menu icon -->
+<!-- Hamburger menu icon -->
+<div class="menu-icon" onclick="toggleMenu()">
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+</div>
+
+<!-- Slide menu content -->
+<div class="side-menu" id="sideMenu">
+    <ul>
+        <li><a href="#" onclick="()">Kvittering</a></li>
+        <li><a href="#" onclick="()">Kontakt</a></li>
+        <li><a href="#" onclick="()">allergener</a></li>
+    </ul>
+</div>
+<h1 class="burgersheader">Burger</h1>
+    <div class="image-grid" id="food">
+        <!-- Image items -->
+       
+        <div class="image-item">
+            
+            <!-- Image with onclick event -->
+            <img src="burger1.png" alt="Image 1" onclick="openNewPage('food-details.html')">
+        
+            <div class="item-name">Double Cheese Burger</div>
+            <p>indholder pickles, tomat, aguark, oksekød blablad,</p>
+            <div class="price-container">89 DKK</div>
+            <div>
+                
+                <button class="tilføj-button" onclick="addToCart( 'Double Cheese Burger', 89)">TILFØJ</button>
+
+        </div>
+        </div>
+        
+        <div class="image-item" onclick="handleImageClick('image2.jpg')">
+            <img src="burger2.png" alt="Image 2">
+            <div class="item-name">Double Cheese Burger</div>
+            <div class="price-container">89,-</div>
+            <div>
+                
+                <button class="tilføj-button" onclick="addToCart('Double Cheese Burger', 89)">TILFØJ</button>
+            </div>
+        </div>
+        <div class="image-item" onclick="handleImageClick('image3.jpg')">
+            <img src="burger3.png" alt="Image 3">
+            <div class="item-name">Fish burger</div>
+            <div class="price-container">89,-</div>
+            <div>
+                
+                <button class="tilføj-button" onclick="addToCart('Double Cheese Burger', 89)">TILFØJ</button>
+            </div>
+        </div>
+        <div class="image-item" onclick="handleImageClick('image3.jpg')">
+            <img src="burger4.png" alt="Image 3">
+            <div class="item-name">burger special</div>
+            <div class="price-container">89,-</div>
+            <div>
+                
+                <button class="tilføj-button" onclick="addToCart('Double Cheese Burger', 89)">TILFØJ</button>
+            </div>
+        </div>
+        <!-- Add more image items as needed -->
+        <div class="image-item" onclick="handleImageClick('image1.jpg')">
+            <img src="burger1.png" alt="Image 1">
+            <div class="item-name">Double Cheese Burger</div>
+            <div class="price-container">89,-</div>
+            <div>
+                
+                <button class="tilføj-button" onclick="addToCart('Double Cheese Burger', 89)">TILFØJ</button>
+            </div>
+        </div>
+        <div class="image-item" onclick="handleImageClick('image2.jpg')">
+            <img src="burger2.png" alt="Image 2">
+            <div class="item-name">Double Cheese Burger</div>
+            <div class="price-container">89,-</div>
+            <div>
+                
+                <button class="tilføj-button" onclick="addToCart('Double Cheese Burger', 89)">TILFØJ</button>
+            </div>
+        </div>
+        <div class="image-item" onclick="handleImageClick('image3.jpg')">
+            <img src="burger3.png" alt="Image 3">
+            <div class="item-name">Double Cheese Burger</div>
+            <div class="price-container">89,-</div>
+            <div>
+                
+                <button class="tilføj-button" onclick="addToCart('Double Cheese Burger', 89)">TILFØJ</button>
+            </div>
+        </div>
+        <div class="image-item" onclick="handleImageClick('image3.jpg')">
+            <img src="burger4.png" alt="Image 3">
+            <div class="item-name">Double Cheese Burger</div>
+            <div class="price-container">89,-</div>
+            <div>
+                
+                <button class="tilføj-button" onclick="addToCart('Double Cheese Burger', 89)">TILFØJ</button>
+            </div>
+        </div>
+    </div>
+<h1 class="drinks">Drikkevarer</h1>
+
+<div class="image-grid" id="drinks">
+    <div class="image-item" onclick="handleImageClick('image1.jpg')">
+    <img src="drink1.png" alt="Image 1">
+    <div class="item-name">Double Cheese Burger</div>
+            <div class="price-container">89,-</div>
+            <div>
+                
+                <button class="tilføj-button" onclick="addToCart('Double Cheese Burger', 89)">TILFØJ</button>
+            </div>
+    </div>
+    <div class="image-item" onclick="handleImageClick('image2.jpg')">
+    <img src="drink2.png" alt="Image 2">
+    <div class="item-name">Double Cheese Burger</div>
+            <div class="price-container">89,-</div>
+            <div>
+                
+                <button class="tilføj-button" onclick="addToCart('Double Cheese Burger', 89)">TILFØJ</button>
+            </div>
+    </div>
+    <div class="image-item" onclick="handleImageClick('image3.jpg')">
+    <img src="drink3.png" alt="Image 3">
+    <div class="item-name">Double Cheese Burger</div>
+            <div class="price-container">89,-</div>
+            <div>
+                
+                <button class="tilføj-button" onclick="addToCart('Double Cheese Burger', 89)">TILFØJ</button>
+            </div>
+
+    </div>
+    <div class="image-item" onclick="handleImageClick('image1.jpg')">
+    <img src="drink1.png" alt="Image 1">
+    <div class="item-name">Double Cheese Burger</div>
+            <div class="price-container">89,-</div>
+            <div>
+                
+                <button class="tilføj-button" onclick="addToCart('Double Cheese Burger', 89)">TILFØJ</button>
+            </div>
+    </div>
+    <div class="image-item" onclick="handleImageClick('image2.jpg')">
+    <img src="drink2.png" alt="Image 2">
+    <div class="item-name">Double Cheese Burger</div>
+            <div class="price-container">89,-</div>
+            <div>
+                
+                <button class="tilføj-button" onclick="addToCart('Double Cheese Burger', 89)">TILFØJ</button>
+            </div>
+    </div>
+    <div class="image-item" onclick="handleImageClick('image3.jpg')">
+    <img src="cocacola.png" alt="Image 3">
+    <div class="item-name">Double Cheese Burger</div>
+            <div class="price-container">89,-</div>
+            <div>
+                
+                <button class="tilføj-button" onclick="addToCart('Double Cheese Burger', 89)">TILFØJ</button>
+            </div>
+    </div>
+</div>
+
+
+
+ <!-- Bottom navigation bar -->
+ <div class="bottom-navigation">
+    <!-- Cart info -->
+    <div class="cart-info">
+        <!-- Light blue circle -->
+        <div class="outer-circle">
+            <!-- White circle around the quantity number -->
+            <div class="white-circle">
+                <!-- Quantity number on the left -->
+                <span id="cartQuantity">0</span>
+            </div>
+            <!-- Shopping bag logo on the right -->
+            <div class="shopping-bag"></div>
+        </div>
+        <div class="price-circle">
+        <!-- Total Price -->
+        <span id="price"> DKK<span id="cartTotal">0.00</span></span>
+    </div>
+</div>
+
+</body>
+</html>
